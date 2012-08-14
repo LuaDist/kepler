@@ -10,7 +10,9 @@ include ( cmake/dist.cmake )
 include ( lua )
 
 # Install Kepler App files
-install_executable ( src/setup-kepler src/cgilua.cgi src/op.cgi )
+install_lua_executable ( setup-kepler src/setup-kepler )
+install_lua_executable ( cgilua.cgi src/cgilua.cgi )
+install_lua_executable ( op.cgi src/op.cgi )
 install_data ( web css conf )
 install_doc ( doc )
 install_lua_module ( kepler_init src/kepler_init.lua )
