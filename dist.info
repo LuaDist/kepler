@@ -15,4 +15,5 @@ depends = {
 	"orbit >= 2.0.2",
 	"rings >= 1.2.2",
 	"coxpcall >= 1.13",
+	"xavante >= 2.2",
 }
